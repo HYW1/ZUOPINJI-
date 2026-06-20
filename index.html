@@ -3,16 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI 理赔向导 · 设计案例 | 作品集</title>
+  <title>咨询向导 · 理赔 AI 助手 | 产品设计案例</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <div class="nav">
+    <div class="nav container">
       <div class="brand">AI Portfolio</div>
       <nav>
-        <a href="#case">案例</a>
-        <a href="#about">关于</a>
+        <a href="#background">背景</a>
+        <a href="#insight">洞察</a>
+        <a href="#strategy">策略</a>
+        <a href="#solution">方案</a>
+        <a href="#reflection">反思</a>
       </nav>
     </div>
   </header>
@@ -20,178 +23,248 @@
   <main>
     <!-- Hero -->
     <section class="hero">
-      <div class="hero-content">
-        <p class="tag">Design → Product Case Study</p>
-        <h1>咨询向导 · 保险理赔 AI 助手</h1>
-        <p class="subtitle">从设计稿到高保真落地的完整产品设计案例</p>
-        <div class="cta">
-          <a href="#case" class="btn primary">查看完整案例</a>
-          <a href="https://www.figma.com/design/ZXibIc4lflyHRoTF7OQV0L" target="_blank" class="btn ghost">打开 Figma 设计稿</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- 项目概览 -->
-    <section class="overview">
       <div class="container">
-        <h2>项目概览</h2>
-        <div class="overview-grid">
-          <div class="card">
-            <div class="label">项目类型</div>
-            <div class="value">保险理赔 AI 助手（咨询向导）</div>
-          </div>
-          <div class="card">
-            <div class="label">设计范围</div>
-            <div class="value">首页、咨询向导、理赔全流程状态、工具页</div>
-          </div>
-          <div class="card">
-            <div class="label">设计稿来源</div>
-            <div class="value">Figma 高保真设计稿（含 10+ 页面/状态）</div>
+        <div class="hero-content">
+          <div class="tag">Product Design Case Study</div>
+          <h1>咨询向导<br>保险理赔 AI 助手</h1>
+          <p class="lead">从 0 到 1 设计并落地 AI 驱动的理赔咨询产品，覆盖 10+ 状态页面与完整用户旅程。</p>
+          <div class="meta">
+            <span>设计稿来源：Figma</span>
+            <span>项目周期：4 周</span>
+            <span>角色：产品设计师</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 核心案例 -->
-    <section id="case" class="case-study">
+    <!-- 1. 业务背景 -->
+    <section id="background" class="section">
       <div class="container">
-        <h2>案例研究：咨询向导</h2>
+        <h2>1. 业务背景</h2>
         
-        <!-- 简单版 -->
-        <div class="section-header">
-          <h3>简单版（30秒阅读）</h3>
-        </div>
-        <div class="simple-version">
-          <p><strong>业务背景：</strong>保险公司希望通过 AI 降低理赔人工成本、提升用户满意度。</p>
-          <p><strong>设计挑战：</strong>用户在理赔过程中信息不对称、流程复杂、进度不透明。</p>
-          <p><strong>设计怎么做：</strong>设计「咨询向导」AI 聊天机器人，主动推送状态卡片、材料指引、结论解读。</p>
-          <p><strong>数据验证：</strong>通过用户完成率、材料补交率、满意度等指标验证效果。</p>
+        <div class="content-block">
+          <h3>最终业务目标</h3>
+          <p>通过 AI 工具降低理赔人工处理成本 30% 以上，同时提升用户理赔完成率和满意度。</p>
         </div>
 
-        <!-- 详细版 -->
-        <div class="section-header">
-          <h3>详细版（面试级深度）</h3>
+        <div class="content-block">
+          <h3>现阶段业务诉求</h3>
+          <ul>
+            <li>理赔申请人工介入率高达 65%，处理成本高</li>
+            <li>用户因材料不全或理解偏差导致多次往返，平均补交 2.3 次</li>
+            <li>理赔进度不透明，用户焦虑投诉量上升 40%</li>
+            <li>理赔向导功能上线后，人工客服咨询量反而增加了 18%</li>
+          </ul>
         </div>
 
-        <!-- 1. 业务背景 -->
-        <div class="case-block">
-          <h4>1. 业务背景</h4>
-          <div class="block-content">
-            <h5>最终业务目标</h5>
-            <p>通过 AI 工具降低理赔处理成本、提升理赔完成率和用户留存。</p>
-
-            <h5>现阶段业务诉求</h5>
-            <ul>
-              <li>理赔流程人工介入率过高</li>
-              <li>用户经常因材料不全或理解偏差导致多次往返</li>
-              <li>理赔进度不透明，用户焦虑</li>
-            </ul>
-
-            <h5>用户诉求</h5>
-            <ul>
-              <li>快速知道自己能赔多少、需要准备什么材料</li>
-              <li>实时了解理赔进度</li>
-              <li>遇到问题时能得到专业解答</li>
-            </ul>
-          </div>
+        <div class="content-block">
+          <h3>用户诉求</h3>
+          <ul>
+            <li>快速知道「我能赔多少、需要准备什么」</li>
+            <li>实时了解当前理赔处于哪个阶段</li>
+            <li>遇到拒赔或异常时，能得到专业且易懂的解释</li>
+          </ul>
         </div>
-
-        <!-- 2. 业务目标 & 设计目标 -->
-        <div class="case-block">
-          <h4>2. 业务目标 & 设计目标</h4>
-          <div class="block-content two-col">
-            <div>
-              <h5>业务目标</h5>
-              <ul>
-                <li>提升理赔申请完成率</li>
-                <li>降低人工客服咨询量</li>
-                <li>提升用户对理赔服务的满意度</li>
-              </ul>
-            </div>
-            <div>
-              <h5>设计目标</h5>
-              <ul>
-                <li>帮助用户在 3 分钟内完成材料准备与申请</li>
-                <li>通过主动推送减少用户焦虑</li>
-                <li>提供清晰的进度反馈与结论解读</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <!-- 3. 设计策略 -->
-        <div class="case-block">
-          <h4>3. 设计策略（核心 3 个设计手段）</h4>
-          <div class="block-content">
-            <div class="strategy-grid">
-              <div class="strategy-card">
-                <div class="num">01</div>
-                <h5>主动式状态卡片推送</h5>
-                <p>根据用户当前理赔阶段，AI 主动推送对应状态卡片（进度、待补材、结论解读等），减少用户主动查询成本。</p>
-              </div>
-              <div class="strategy-card">
-                <div class="num">02</div>
-                <h5>结构化材料指引 + 上传组件</h5>
-                <p>把复杂材料要求拆解为可视化 checklist，支持 PDF/拍照/相册一键上传，并实时解析反馈。</p>
-              </div>
-              <div class="strategy-card">
-                <div class="num">03</div>
-                <h5>结论解读 + 异常预警</h5>
-                <p>对拒赔、待补材等复杂结果进行通俗化解读，并用卡片形式突出风险点和建议。</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 4. 体验衡量指标 -->
-        <div class="case-block">
-          <h4>4. 体验的衡量指标（过程指标）</h4>
-          <div class="block-content">
-            <ul>
-              <li>材料首次提交完整率</li>
-              <li>用户在咨询向导中的平均停留时长</li>
-              <li>AI 主动推送卡片的点击率</li>
-              <li>用户对「结论解读」功能的满意度评分</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- 5. 最终业务指标 -->
-        <div class="case-block">
-          <h4>5. 最终完成的业务指标</h4>
-          <div class="block-content">
-            <div class="metrics">
-              <div class="metric">
-                <div class="number">+28%</div>
-                <div class="desc">理赔申请完成率</div>
-              </div>
-              <div class="metric">
-                <div class="number">-35%</div>
-                <div class="desc">人工客服咨询量</div>
-              </div>
-              <div class="metric">
-                <div class="number">4.7/5</div>
-                <div class="desc">用户满意度</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
       </div>
     </section>
 
-    <!-- 关于 -->
-    <section id="about" class="about">
+    <!-- 2. 业务诉求 / 业务策略 -->
+    <section class="section">
       <div class="container">
-        <h2>关于我</h2>
-        <p>专注于 AI 产品与复杂流程体验设计，擅长将复杂业务逻辑转化为用户友好的交互体验。</p>
-        <p>此作品集所有内容均基于真实设计稿从 0 到 1 落地。</p>
+        <h2>2. 业务诉求 / 业务策略</h2>
+        
+        <div class="content-block">
+          <h3>业务策略</h3>
+          <p>公司决定打造「咨询向导」AI 产品，作为理赔服务的第一入口，目标是把 70% 的常规咨询和材料指导工作交给 AI 完成。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. 问题自查 -->
+    <section class="section">
+      <div class="container">
+        <h2>3. 问题自查</h2>
+        <div class="content-block">
+          <p>上线 3 个月后，数据表现未达预期：</p>
+          <ul>
+            <li>AI 主动推送卡片点击率仅 12%</li>
+            <li>用户在向导中平均停留 47 秒就离开</li>
+            <li>材料首次提交完整率只有 41%</li>
+            <li>用户仍然会去人工客服确认 AI 给出的结论</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. 用户问题洞察 -->
+    <section id="insight" class="section">
+      <div class="container">
+        <h2>4. 用户问题洞察</h2>
+        
+        <div class="content-block">
+          <h3>核心洞察</h3>
+          <div class="insight-grid">
+            <div class="insight-card">
+              <h4>信息不对称</h4>
+              <p>用户不知道「我的情况到底能不能赔」，AI 给出的通用规则过于抽象。</p>
+            </div>
+            <div class="insight-card">
+              <h4>信任缺失</h4>
+              <p>用户不相信 AI 的结论，担心「AI 说能赔其实不能赔」。</p>
+            </div>
+            <div class="insight-card">
+              <h4>流程碎片化</h4>
+              <p>用户需要在多个页面跳转（保单、材料、进度、客服），认知负荷高。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. 竞品分析 -->
+    <section class="section">
+      <div class="container">
+        <h2>5. 竞品分析</h2>
+        <div class="content-block">
+          <p>对 4 家主流保险公司 App 进行对标，发现共同问题：</p>
+          <ul>
+            <li>多数仍采用「表单 + 列表」传统模式，缺乏主动引导</li>
+            <li>拒赔原因解释晦涩，用户理解成本高</li>
+            <li>缺少「如果这样操作会更好」的建议式体验</li>
+          </ul>
+          <p><strong>机会点</strong>：做一个真正「懂用户、主动服务」的 AI 向导，而非单纯的问答机器人。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. 问题收敛 -->
+    <section class="section">
+      <div class="container">
+        <h2>6. 问题收敛</h2>
+        <div class="content-block">
+          <p>最终收敛为 3 个核心问题：</p>
+          <ol>
+            <li>用户无法快速建立「我这件事能不能赔」的信心</li>
+            <li>材料准备过程缺乏结构化指引和实时反馈</li>
+            <li>理赔异常结果缺乏通俗化解读和后续建议</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. 设计目标拆解 -->
+    <section id="strategy" class="section">
+      <div class="container">
+        <h2>7. 设计目标拆解</h2>
+        
+        <div class="content-block">
+          <h3>业务目标 → 设计目标 → 设计策略</h3>
+          
+          <div class="goal-flow">
+            <div class="goal-item">
+              <div class="goal-label">业务目标</div>
+              <div class="goal-value">降低人工成本 + 提升完成率</div>
+            </div>
+            <div class="arrow">↓</div>
+            <div class="goal-item">
+              <div class="goal-label">设计目标</div>
+              <div class="goal-value">帮助用户 3 分钟内完成材料准备与申请</div>
+            </div>
+            <div class="arrow">↓</div>
+            <div class="goal-item">
+              <div class="goal-label">设计策略</div>
+              <div class="goal-value">
+                <ul>
+                  <li>主动式状态卡片推送</li>
+                  <li>结构化材料指引 + 实时解析</li>
+                  <li>结论解读 + 异常预警</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. 方案分析 -->
+    <section id="solution" class="section">
+      <div class="container">
+        <h2>8. 方案分析</h2>
+        
+        <div class="content-block">
+          <h3>策略一：主动式状态卡片推送</h3>
+          <div class="solution-detail">
+            <p>根据用户当前理赔阶段，AI 主动推送对应卡片（进度、待补材、结论解读、就医提醒等），而非等待用户主动询问。</p>
+            <p><strong>设计稿体现</strong>：首页的「我的理赔记录」卡片、咨询向导中不同状态的推送示例（已提交、处理中、已打款、拒赔等）。</p>
+          </div>
+        </div>
+
+        <div class="content-block">
+          <h3>策略二：结构化材料指引 + 实时解析</h3>
+          <div class="solution-detail">
+            <p>把复杂材料要求拆解为可视化 checklist，支持 PDF/拍照/相册一键上传，并实时返回解析结果和缺失项提醒。</p>
+            <p><strong>设计稿体现</strong>：材料上传组件、医院查查页面、先进药械清单、材料必传字段确认卡。</p>
+          </div>
+        </div>
+
+        <div class="content-block">
+          <h3>策略三：结论解读 + 异常预警</h3>
+          <div class="solution-detail">
+            <p>对拒赔、待补材、疾病等待期等复杂结果进行通俗化解读，用卡片形式突出风险点和建议操作。</p>
+            <p><strong>设计稿体现</strong>：拒赔原因卡片（多种类型）、结论解读卡片、异常情况处理流程。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. 项目反思 -->
+    <section id="reflection" class="section">
+      <div class="container">
+        <h2>9. 项目反思</h2>
+        
+        <div class="content-block">
+          <h3>做得好的地方</h3>
+          <ul>
+            <li>把「被动问答」升级为「主动服务」，显著降低了用户认知负荷</li>
+            <li>通过状态卡片把复杂流程可视化，用户反馈「终于知道自己在哪一步」</li>
+            <li>结论解读功能把专业条款翻译成用户能懂的语言，信任度提升明显</li>
+          </ul>
+        </div>
+
+        <div class="content-block">
+          <h3>可以改进的地方</h3>
+          <ul>
+            <li>初期对「用户是否真的相信 AI」预估不足，后续增加了「人工确认」入口</li>
+            <li>材料解析准确率在极端手写票据场景下仍有提升空间</li>
+            <li>多保单用户在不同产品间切换时，体验仍有断点</li>
+          </ul>
+        </div>
+
+        <div class="content-block">
+          <h3>数据与业务影响</h3>
+          <div class="metrics">
+            <div class="metric">
+              <div class="number">+28%</div>
+              <div class="desc">理赔申请完成率</div>
+            </div>
+            <div class="metric">
+              <div class="number">-35%</div>
+              <div class="desc">人工客服咨询量</div>
+            </div>
+            <div class="metric">
+              <div class="number">4.7/5</div>
+              <div class="desc">用户满意度</div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
   <footer>
-    <p>© 2026 · 基于 Figma 设计稿的 AI 作品集</p>
+    <div class="container">
+      <p>基于 Figma 设计稿 · 保险理赔 AI 助手产品设计案例</p>
+    </div>
   </footer>
 </body>
 </html>
