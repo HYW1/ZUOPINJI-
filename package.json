@@ -1,0 +1,9 @@
+{
+  "name": "ai-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "check": "node --check script.js",
+    "start": "python3 -m http.server 4173"
+  }
+}
