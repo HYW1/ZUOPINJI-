@@ -1,0 +1,6 @@
+{
+  "name": "日式原木风 3D 打字机静谧书桌",
+  "description": "Personal Portfolio Website featuring an interactive 3D Typewriter Desk hero cover, About Me profile, interactive Project Cards showcase, and Footer.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

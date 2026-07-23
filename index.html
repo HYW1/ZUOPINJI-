@@ -1,127 +1,13 @@
 <!doctype html>
-<html lang="zh-CN">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#17291f">
-  <title>咨询向导 · AI 理赔体验设计</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Noto+Serif+SC:wght@500;600;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header class="site-header" data-header>
-    <a class="brand" href="#top">YU / UX</a>
-    <nav aria-label="主导航">
-      <a href="#brief">概览</a>
-      <a href="#case">案例</a>
-      <a href="#about">关于</a>
-    </nav>
-    <a class="menu-dot" href="#case" aria-label="查看案例"><span></span><span></span></a>
-  </header>
-
-  <main id="top">
-    <section class="hero">
-      <p class="eyebrow" data-parallax="0.12">01 — PRODUCT CASE STUDY / 2026</p>
-      <div class="hero-copy">
-        <p class="hero-kicker">保险理赔体验设计</p>
-        <h1>让复杂的理赔<br>有<span>纸</span>可循。</h1>
-        <p class="hero-description">以 AI 咨询向导为入口，把焦虑、等待与繁杂材料，整理成每个人都能跟上的清晰路径。</p>
-      </div>
-      <a class="scroll-cue" href="#brief"><span>SCROLL TO UNFOLD</span><i></i></a>
-      <div class="hero-paper" data-parallax="-0.1" aria-hidden="true">
-        <div class="paper paper-back"></div>
-        <div class="paper paper-middle"></div>
-        <div class="paper paper-front">
-          <div class="paper-line"></div><div class="paper-line short"></div>
-          <p>CLAIM<br>GUIDE</p><b>01</b>
-        </div>
-      </div>
-      <div class="hero-orb orb-one" data-parallax="0.22"></div>
-      <div class="hero-orb orb-two" data-parallax="-0.16"></div>
-    </section>
-
-    <section id="brief" class="overview section">
-      <div class="section-index" data-parallax="0.12">/ 01</div>
-      <div class="section-intro">
-        <p class="eyebrow">THE BRIEF</p>
-        <h2>把每一次<br>不确定，<em>变成下一步。</em></h2>
-      </div>
-      <div class="overview-grid">
-        <article class="brief-card tilt-card" data-parallax="-0.04">
-          <span>项目类型</span><strong>保险理赔<br>AI 助手</strong><i>↘</i>
-        </article>
-        <article class="brief-card tilt-card" data-parallax="0.06">
-          <span>设计范围</span><strong>首页 · 向导 ·<br>全流程状态</strong><i>↘</i>
-        </article>
-        <article class="brief-card lime tilt-card" data-parallax="-0.08">
-          <span>交付内容</span><strong>10+ 高保真<br>页面与状态</strong><i>↘</i>
-        </article>
-      </div>
-    </section>
-
-    <section id="case" class="case-study section">
-      <div class="case-backdrop" data-parallax="-0.1">GUIDE</div>
-      <div class="section-index light" data-parallax="0.1">/ 02</div>
-      <div class="case-heading">
-        <p class="eyebrow">CASE STUDY — CONSULTATION GUIDE</p>
-        <h2>不是聊天机器人。<br>是一位<span>同行者。</span></h2>
-      </div>
-      <div class="case-summary paper-sheet" data-parallax="-0.03">
-        <span class="sheet-label">30 SEC. SUMMARY</span>
-        <p>用户无需理解理赔规则；咨询向导会在合适的时间，递上合适的信息与下一步行动。</p>
-        <div class="summary-tags"><span>状态主动推送</span><span>材料清单</span><span>结果解读</span></div>
-      </div>
-      <div class="problem-grid">
-        <article class="problem paper-sheet" data-parallax="0.05"><span>01</span><h3>信息不对称</h3><p>不知道能否理赔、需要哪些材料，只能反复询问。</p></article>
-        <article class="problem paper-sheet offset" data-parallax="-0.04"><span>02</span><h3>流程不透明</h3><p>提交后没有回应，等待变成一种持续的焦虑。</p></article>
-        <article class="problem paper-sheet" data-parallax="0.07"><span>03</span><h3>结论难理解</h3><p>专业术语与复杂结果，让用户不知道该怎么继续。</p></article>
-      </div>
-    </section>
-
-    <section class="strategy section">
-      <div class="section-index" data-parallax="0.1">/ 03</div>
-      <div class="strategy-title">
-        <p class="eyebrow">DESIGN RESPONSE</p>
-        <h2>三张牌，<br><em>接住全过程。</em></h2>
-      </div>
-      <div class="strategy-stack">
-        <article class="strategy-card card-01" data-parallax="-0.09">
-          <div><span>01 / WHEN TO KNOW</span><h3>主动式<br>状态推送</h3></div>
-          <p>在用户还没开口前，告知进度、待办与预计处理时间。</p><b>→</b>
-        </article>
-        <article class="strategy-card card-02" data-parallax="0.02">
-          <div><span>02 / WHAT TO PREPARE</span><h3>结构化<br>材料指引</h3></div>
-          <p>将复杂要求变成可完成的 checklist，支持实时上传与反馈。</p><b>→</b>
-        </article>
-        <article class="strategy-card card-03" data-parallax="0.09">
-          <div><span>03 / HOW TO ACT</span><h3>结论解读<br>异常预警</h3></div>
-          <p>用用户听得懂的语言，解释结果并给出清晰的行动建议。</p><b>→</b>
-        </article>
-      </div>
-    </section>
-
-    <section class="outcome section">
-      <div class="outcome-copy">
-        <p class="eyebrow">MEASURE THE CHANGE</p>
-        <h2>体验不是<br>感觉，<span>是结果。</span></h2>
-      </div>
-      <div class="metrics">
-        <div class="metric" data-parallax="-0.06"><strong>+28<small>%</small></strong><span>理赔申请完成率</span></div>
-        <div class="metric accent" data-parallax="0.04"><strong>−35<small>%</small></strong><span>人工客服咨询量</span></div>
-        <div class="metric" data-parallax="-0.08"><strong>4.7<small>/5</small></strong><span>用户满意度</span></div>
-      </div>
-    </section>
-
-    <section id="about" class="about section">
-      <p class="eyebrow">ABOUT THE DESIGNER</p>
-      <h2>把混乱的信息<br>变成平静的体验。</h2>
-      <p class="about-copy">专注 AI 产品与复杂流程体验设计。相信好的数字产品，应该像一张被仔细折好的纸：重要的内容，总在恰好的位置出现。</p>
-      <a href="mailto:hello@example.com" class="contact-link">HELLO@EXAMPLE.COM <span>↗</span></a>
-    </section>
-  </main>
-  <footer><span>© 2026 YU / UX</span><span>DESIGNED WITH CLARITY</span></footer>
-  <script src="script.js"></script>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Google AI Studio App</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
+
