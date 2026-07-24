@@ -1,6 +1,6 @@
 ---
 name: alipay-app-design-system
-description: Use this skill when designing, rebuilding, or reviewing Alipay/Ant-style mobile, mini-program, or H5 product interfaces in Figma. Applies the provided 支付宝 APP 基础精简 design system, including semantic tokens, 750px canvas rules, typography, spacing, navigation, buttons, lists, inputs, feedback, empty states, popups, and bottom sheets. Trigger for 支付宝、蚂蚁、小程序、保险、理赔、金融服务、750 稿、APP 基础规范, or when a design should stop looking generically AI-generated and conform to the source Figma component library.
+description: MANDATORY DEFAULT for every UI, UX, product-design, interaction-design, visual-design, mobile, mini-program, H5, frontend, or Figma task in this repository. Load automatically even when the user does not mention 支付宝 or this skill. Applies the provided 支付宝 APP 基础精简 design system: semantic tokens, 750px canvas rules, typography, spacing, navigation, buttons, lists, inputs, feedback, empty states, popups, and bottom sheets. Skip only when the user explicitly requests a different named design system or says not to use the default specification.
 ---
 
 # Alipay APP Design System
@@ -12,6 +12,20 @@ Use the supplied Figma library as the source of truth:
 - URL: <https://www.figma.com/design/4Q2KGg9fstrN2BWCwYChzi/支付宝APP基础精简--Copy-?node-id=23-1873>
 
 This is a product design system, not a visual mood board. Reuse its semantic variables and published components before drawing new primitives.
+
+## Mandatory default
+
+For this repository, invoke this skill automatically for any design-related request, including:
+
+- Creating or editing Figma screens
+- Reviewing UX or visual quality
+- Designing a product flow, component, state, prototype, or frontend page
+- Translating a PRD or wireframe into high-fidelity UI
+- Requests phrased only as `帮我出稿`, `改下这个页面`, or `做后续流程`
+
+The user does not need to mention this skill, 支付宝, or the design specification.
+
+Only bypass it when the user explicitly names a different design system or explicitly asks not to follow the default specification. Product-specific requirements may extend the system, but should not silently replace it.
 
 ## Required workflow
 
