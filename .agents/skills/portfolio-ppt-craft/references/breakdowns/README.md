@@ -6,7 +6,7 @@
 
 | 文件 | 来源 | 状态 |
 |------|------|------|
-| `252-1793-作品集PPT参考.md` | Pinterest「作品集排版」→ Figma `252:1793` | 2026-07-27 初版；分区可纠偏 |
+| `252-1793-作品集PPT参考.md` | Pinterest「作品集排版」→ Figma `252:1793` | 2026-07-27 **二次重分类** |
 
 Figma：https://www.figma.com/design/ZXibIc4lflyHRoTF7OQV0L/skill?node-id=252-1793
 
