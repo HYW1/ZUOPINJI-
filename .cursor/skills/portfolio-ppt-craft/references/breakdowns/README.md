@@ -1,26 +1,22 @@
-# Breakdowns 入口（等待参考）
+# Breakdowns 入口
 
-本目录存放对**用户提供的**作品集 PPT / Demo Deck 参考页的拆解文档。
+本目录存放对用户提供的作品集 PPT / Demo Deck 参考页的拆解文档。
 
-## 状态
+## 已入库
 
-- **当前：骨架已就绪，尚无入库参考。**
-- 在用户给出参考图、Figma node、Keynote/Slides 导出页之前：**不拆解、不生图、不臆造案例。**
+| 文件 | 来源 | 状态 |
+|------|------|------|
+| `252-1793-作品集PPT参考.md` | Pinterest「作品集排版」→ Figma `252:1793` | 2026-07-27 初版；分区可纠偏 |
+
+Figma：https://www.figma.com/design/ZXibIc4lflyHRoTF7OQV0L/skill?node-id=252-1793
 
 ## 如何追加
 
-1. 用户提供参考（建议同时给：好样本 + 可选反面样本）
-2. 按 `../templates/reference-breakdown.md` 的 7 问结构逐张拆解
-3. 本目录新建文件，命名建议：
-
-```text
-<来源简写>-<主题>.md
-例：figma-321-100-封面参考.md
-例：deck-export-章节页节奏.md
-```
-
+1. 用户提供新参考（好样本 + 可选反面）
+2. 按 `../templates/reference-breakdown.md` 的 7 问结构逐张/逐区拆解
+3. 本目录新建文件，命名建议：`<来源简写>-<主题>.md`
 4. 将可迁移技巧追加到 `../learned-techniques.md`（续编号）
-5. 若有实战改稿，过程记录可放 `../cases/`（同样等真实任务再写）
+5. 实战改稿笔记放 `../cases/`
 
 ## 拆解目标
 
