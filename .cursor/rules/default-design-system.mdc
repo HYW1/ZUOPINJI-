@@ -1,0 +1,38 @@
+---
+description: Automatically enforce the Alipay APP design system and historical pattern archive for all design work.
+globs:
+alwaysApply: true
+---
+
+# Default design system
+
+This repository is primarily used for product and experience design work.
+
+For every UI, UX, product-design, interaction-design, visual-design, frontend, mobile, mini-program, H5, prototype, or Figma request:
+
+1. Automatically load `.cursor/skills/alipay-app-design-system/SKILL.md`.
+2. Apply its semantic tokens, typography, spacing, radius, layout, component-selection, state, copywriting, and QA rules.
+3. Reuse experience patterns distilled from the historical archive Figma file `ZXibIc4lflyHRoTF7OQV0L` (门户、状态卡、个性化卡、申请链路等) — treat them as **portable patterns for any new requirement**, not as a single locked business flow.
+4. Use the source Figma component keys before creating replacement primitives.
+5. Do not wait for the user to mention 支付宝、设计规范, or the skill name.
+
+This rule also applies to vague requests such as:
+
+- 帮我出设计稿
+- 把后续流程做完
+- 重新改下这个页面
+- 这个稿子不好看
+- 帮我优化体验
+- 参考历史稿 / 按规范做
+
+Only bypass the default when the user explicitly names a different design system or explicitly asks not to use this specification.
+
+Priority order:
+
+1. Explicit user requirements
+2. Pasted demo / product screenshots (content truth)
+3. Business and compliance constraints
+4. Alipay APP design-system rules + historical pattern archive
+5. General UI inspiration
+
+Never replace the design system with generic AI styling, even when another design-oriented skill is also loaded.
