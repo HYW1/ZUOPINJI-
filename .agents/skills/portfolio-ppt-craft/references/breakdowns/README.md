@@ -6,7 +6,7 @@
 
 | 文件 | 来源 | 状态 |
 |------|------|------|
-| `252-1793-作品集PPT参考.md` | Pinterest「作品集排版」→ Figma `252:1793` | 2026-07-27 **二次重分类** |
+| `252-1793-作品集PPT参考.md` | 多板：背景素材 + 作品集排版 invite 变体 → Figma `252:1793` | 2026-07-27 **多板整合**（09/10/11） |
 
 Figma：https://www.figma.com/design/ZXibIc4lflyHRoTF7OQV0L/skill?node-id=252-1793
 
