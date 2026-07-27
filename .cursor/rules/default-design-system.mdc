@@ -1,0 +1,40 @@
+---
+description: Automatically enforce Alipay APP base design system plus 理赔向导 product flow skill for all design work.
+globs:
+alwaysApply: true
+---
+
+# Default design system
+
+This repository is primarily used for product and experience design work around **理赔向导 / 医疗费用快捷报销**.
+
+For every UI, UX, product-design, interaction-design, visual-design, frontend, mobile, mini-program, H5, prototype, or Figma request:
+
+1. Automatically load `.cursor/skills/alipay-app-design-system/SKILL.md` (visual tokens, components, spacing).
+2. Automatically load `.cursor/skills/claims-guide-flow/SKILL.md` (scenarios, page templates, materials diagnosis, registration dual-fallback, edit discipline).
+3. Apply semantic tokens, typography, spacing, radius, layout, component-selection, state, copywriting, and QA rules from the Alipay skill.
+4. Apply flow map, demo-first content rules, and page patterns from the claims-guide skill when the work touches this product — including vague Figma-link-only requests on file `DLepVQbX1Ll21Y2fh1kmyU`.
+5. Use the source Figma component keys before creating replacement primitives.
+6. Do not wait for the user to mention 支付宝、理赔向导、设计规范, or the skill names.
+
+This rule also applies to vague requests such as:
+
+- 帮我出设计稿
+- 把后续流程做完
+- 重新改下这个页面
+- 这个稿子不好看
+- 帮我优化体验
+- 按 demo / 按我发的图改
+
+Only bypass the defaults when the user explicitly names a different design system or explicitly asks not to use these specifications.
+
+Priority order:
+
+1. Explicit user requirements
+2. Pasted demo / product screenshots (content truth)
+3. Business and compliance constraints
+4. `claims-guide-flow` scenario and page rules
+5. Alipay APP design-system rules
+6. General UI inspiration
+
+Never replace the design system with generic AI styling, even when another design-oriented skill is also loaded.
