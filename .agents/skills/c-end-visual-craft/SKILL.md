@@ -298,3 +298,14 @@ description: >-
 4. 前后对比 + 验收表勾选  
 
 若用户只要求「先建 Skill、等参考图再拆解」：建完 Skill 后停止，等待下一轮参考输入。
+
+---
+
+## Cloud 使用说明（菜单 ≠ 加载）
+
+Cursor Cloud **斜杠菜单有时只显示内置项**，不代表仓库技能未安装。
+
+- 本技能安装于：`.cursor/skills/c-end-visual-craft/` 与 `.agents/skills/c-end-visual-craft/`
+- 后端 / 工作区仍会加载上述文件；用户可用自然语言点名启用，例如：「用 c-end-visual-craft skill」
+- Agent 收到点名后必须读本 `SKILL.md` 并按强制工作顺序执行，不得因菜单缺失而跳过
+- 现象说明与验证记录见 `references/cloud-skill-discovery.md`
