@@ -1,151 +1,135 @@
 ---
 name: alipay-app-design-system
-description: MANDATORY DEFAULT for every UI, UX, product-design, interaction-design, visual-design, mobile, mini-program, H5, frontend, or Figma task in this repository. Load automatically even when the user does not mention 支付宝 or this skill. Applies the provided 支付宝 APP 基础精简 design system: semantic tokens, 750px canvas rules, typography, spacing, navigation, buttons, lists, inputs, feedback, empty states, popups, and bottom sheets. Skip only when the user explicitly requests a different named design system or says not to use the default specification.
+description: MANDATORY DEFAULT for every UI, UX, product-design, interaction-design, visual-design, mobile, mini-program, H5, frontend, or Figma task in this repository. Combines (1) 支付宝 APP 基础精简 design-system tokens/components and (2) reusable experience patterns distilled from the historical design archive Figma file `ZXibIc4lflyHRoTF7OQV0L` (门户、状态卡、个性化卡、申请链路、材料、结论解读等). Use for any new product requirement — not limited to one business flow. Skip only when the user explicitly names a different design system.
 ---
 
-# Alipay APP Design System
+# Alipay APP Design System + Experience Patterns
 
-Use the supplied Figma library as the source of truth:
+本 skill 合并两份真源，供**后续任意产品需求**复用：
+
+| 真源 | 用途 |
+|---|---|
+| 支付宝 APP 基础精简组件库 | 色板、字号、间距、圆角、导航/按钮/列表/反馈等组件 |
+| Figma 历史稿 `skill` 文件 | 阵地页、状态分流、个性化卡片、申请模块、结论卡等可迁移模式 |
+
+**不要**把本 skill 理解成「仅就医报销流程专用」。历史稿里的理赔样例是**模式样本**；新需求应抽取结构与交互原则，替换业务文案与字段。
+
+## Source files
+
+### 1) Design system library
 
 - File: `4Q2KGg9fstrN2BWCwYChzi`
 - Page: `23:1873` — `Components通用基础组件`
-- URL: <https://www.figma.com/design/4Q2KGg9fstrN2BWCwYChzi/支付宝APP基础精简--Copy-?node-id=23-1873>
+- URL: https://www.figma.com/design/4Q2KGg9fstrN2BWCwYChzi/支付宝APP基础精简--Copy-?node-id=23-1873
 
-This is a product design system, not a visual mood board. Reuse its semantic variables and published components before drawing new primitives.
+### 2) Pattern archive (历史稿)
+
+- File: `ZXibIc4lflyHRoTF7OQV0L`
+- Page: `0:1` — `历史稿`
+- URL: https://www.figma.com/design/ZXibIc4lflyHRoTF7OQV0L/skill?node-id=0-1
+- Name on canvas: `skill`
+
+改稿前先在历史稿中检索同类模块，再套用基础组件实现。
 
 ## Mandatory default
 
-For this repository, invoke this skill automatically for any design-related request, including:
+对本仓库任何设计相关请求自动启用，包括：
 
-- Creating or editing Figma screens
-- Reviewing UX or visual quality
-- Designing a product flow, component, state, prototype, or frontend page
-- Translating a PRD or wireframe into high-fidelity UI
-- Requests phrased only as `帮我出稿`, `改下这个页面`, or `做后续流程`
+- 新建 / 修改 Figma 页面、组件、状态、原型
+- UX 评审、信息架构、交互说明
+- 「帮我出稿」「按规范做」「参考历史稿」「做一个 XX 流程」
 
-The user does not need to mention this skill, 支付宝, or the design specification.
+用户无需提及「支付宝」或 skill 名。仅当用户**点名其他设计体系**或明确说不用本规范时跳过。
 
-Only bypass it when the user explicitly names a different design system or explicitly asks not to follow the default specification. Product-specific requirements may extend the system, but should not silently replace it.
+## Priority
+
+1. 用户当次明确要求  
+2. 用户粘贴的 demo / 截图内容  
+3. 业务与合规约束  
+4. 本 skill：基础 token/组件 + 历史稿模式  
+5. 通用 UI 灵感  
 
 ## Required workflow
 
-1. **Confirm the platform**
-   - Distinguish 小程序, H5, and native APP.
-   - Default Figma canvas is `750 × 1624` at 2× design scale.
-   - Keep all values in this skill at Figma scale. Divide numeric dimensions by 2 only when implementing a 375px logical-width interface in code.
+1. **Confirm platform** — 小程序 / H5 / APP；默认画布 `750 × 1624`（2×）。代码若用 375 逻辑宽，数值 ÷2。  
+2. **Load Figma skills** — `figma-use`；整页再用 `figma-generate-design`。  
+3. **Match a pattern first** — 在历史稿按 [pattern-archive.md](references/pattern-archive.md) 找近邻模块（门户 / 卡片 / 状态 / 表单步骤 / 结果）。  
+4. **Implement with library components** — 用 [components.md](references/components.md) 的 key 导入实例，禁止手绘顶栏/主按钮/开关。  
+5. **Bind semantic tokens** — 用 [tokens.md](references/tokens.md) 的 APP 语义色与字号；不要另造第二套蓝。  
+6. **Cover states** — 历史稿强调状态矩阵；至少覆盖默认、空、异常、完成，以及业务分流（有/无记录、有/无权益等）。  
+7. **Validate** — 截图检查层级、长中文、底栏遮挡、组件尺寸。  
 
-2. **Load the Figma workflow**
-   - Before any `use_figma` call, load `figma-use`.
-   - For full screens, also load `figma-generate-design`.
-   - Inspect the target file for existing instances before importing components.
-
-3. **Use semantic tokens**
-   - Use the `APP` collection for product UI.
-   - Use `Base` only to understand or extend the scale.
-   - Never replace semantic text colors with arbitrary grays.
-   - Never create a second blue that competes with `Color/Brand`.
-
-4. **Reuse components**
-   - Import or clone the source component when a matching pattern exists.
-   - Preserve component variant axes and native dimensions.
-   - Do not detach instances merely to change copy.
-   - See [components.md](references/components.md) for component keys and selection guidance.
-
-5. **Structure the screen**
-   - Use Auto Layout for navigation, content groups, lists, cards, forms, and bottom actions.
-   - Page width is 750; standard content width is 718 with 16px side padding.
-   - Use a card only when content is a meaningful group, not as decoration around every paragraph.
-   - Keep one primary action per screen. Use `ButtonGroup` when agreement or secondary actions are required.
-
-6. **Design all relevant states**
-   - Default, selected, disabled, loading, success, warning/failure, empty, and retry states.
-   - Use the library's `Result`, `Toast`, `Banner`, `BlankPage`, and popup components instead of inventing status banners.
-
-7. **Validate**
-   - Screenshot every representative screen.
-   - Check text hierarchy, long Chinese copy, numeric alignment, component dimensions, content clipping, fixed action-bar overlap, and platform-specific navigation.
-
-## Core visual rules
+## Core visual rules (规范摘要)
 
 ### Color
 
-- Brand, button, and link: `#1677FF`
-- Primary text: black at 80%
-- Secondary text: black at 60%
-- Tertiary text: black at 40%
-- Disabled text: black at 10%
-- Divider: black at 6%
-- Page background: `#F0F3F7`
-- Card background: `#FFFFFF`
-- Inner card background: `#F9FAFC`
-- Success: `#00B865`
-- Notice: `#FF5E1A`
-- Alert/failure: `#FF1A3C`
+- Brand / Button / Link: `#1677FF`
+- Text: 80% / 60% / 40% / 20% / 10% black
+- Divider: black 6%
+- Page BG: `#F0F3F7` · Card: `#FFFFFF` · Inner: `#F9FAFC`
+- Success `#00B865` · Notice `#FF5E1A` · Alert `#FF1A3C`
 
-Do not use semantic status colors as large decorative backgrounds. Use them for icons, labels, borders, and action-critical messages.
+状态色用于图标、标签、短结论条；不要整页大面积装饰性成功绿/警示橙。
 
 ### Typography
 
-- Chinese: PingFang SC
-- Numbers and money: Alibaba Sans 102 Ver2
-- Display: 48 / 72, Medium
-- Status title: 40 / 60, Medium
-- Title L: 36 / 56, Medium
-- Title M: 32 / 48, Medium
-- Title S: 28 / 42, Medium
-- Body L: 30 / 45, Regular
-- Body M: 28 / 42, Regular
-- Body S / Caption: 24 / 36, Regular
-- Tag: 20 / 30, Regular
+- 中文：PingFang SC  
+- 金额数字：Alibaba Sans 102 Ver2  
+- Display 48/72 · Status 40/60 · Title L/M/S 36/32/28 · Body 30/28/24 · Tag 20  
 
-Use Medium for hierarchy, not blanket emphasis. Use the number font for prices, totals, balances, dates, and identifiers when the surrounding component does so.
+### Spacing / radius
 
-### Spacing and radius
+- Scale: `4, 8, 12, 16, 24, 32, 40, 48, 64…`
+- Page pad 16 · Card gap 16 · Card pad 24  
+- Page card 32 · Card 24 · Inner 16 · Element 8 · Dialog 48 · Button 100  
 
-- Base spacing scale: `4, 8, 12, 16, 24, 32, 40, 48, 64, 72, 80, 88, 96`
-- Page padding: 16
-- Card gap: 16
-- Card and inner-card padding: 24
-- Page card radius: 32
-- Card radius: 24
-- Inner card radius: 16
-- Element radius: 8
-- Dialog radius: 48
-- Button radius: 100
+### Layout
 
-Use the named semantic spacing first. Do not select a spacing value merely because it looks close.
+- 内容宽 718；一页一个主动作  
+- 卡片只包业务对象，不为每段话套卡  
+- 固定底栏 + Home Indicator；内容预留底部安全区  
 
-## Product-writing rules
+详见 [layout-and-content.md](references/layout-and-content.md)、[design-principles.md](references/design-principles.md)。
 
-- Name actions by their result: `提交申请`, `重新上传`, `查看进度`.
-- Put the conclusion before the explanation.
-- Keep button language consistent with the following result or toast.
-- Error states must say what failed and how to recover.
-- Empty states must provide the next available action.
-- Avoid promotional wording in transactional flows.
+## Experience patterns from 历史稿 (可迁移)
+
+完整地图见 [pattern-archive.md](references/pattern-archive.md)。做新需求时按类型复用：
+
+| 模式族 | 何时用 | 详情 |
+|---|---|---|
+| 阵地 / 门户 | 服务首页、多入口聚合 | [portal-and-cards.md](references/portal-and-cards.md) |
+| 个性化卡片 | 进度、引导、权益、兜底运营位 | 同上 |
+| 状态 / 结论卡 | 审核结果、拒赔解读、多进度 | [status-and-result-cards.md](references/status-and-result-cards.md) |
+| 申请链路模块 | 说明→选择→上传→确认→签名→完成 | [application-flow-modules.md](references/application-flow-modules.md) |
+| 材料准备页 | 清单 + 范围说明 + 协议申请 | application-flow-modules |
+| 对话式向导壳 | 服务/对话双 Tab、AI 声明、语音输入 | pattern-archive |
+
+**迁移方法**：保留信息顺序与组件结构，替换标题、字段、状态枚举与主按钮文案；不要整页复制历史业务文案到无关需求。
+
+## Product writing
+
+- 结论先于解释  
+- 动作按结果命名（`继续申请`、`查看详情`、`去补齐`）  
+- 异常说明「原因 + 下一步」  
+- 避免实现词（OCR、接口、reject-reason 对用户露出时要转成白话）  
+- 交易流程不用宣传腔和大面积 emoji 图标  
 
 ## Anti-patterns
 
-- Do not use AI-purple gradients, glassmorphism, glow, or decorative blobs.
-- Do not add a gradient hero to ordinary product forms or claim flows.
-- Do not place every text block in a rounded floating card.
-- Do not mix custom icons with library icons.
-- Do not use two equally dominant primary buttons.
-- Do not make all text bold.
-- Do not use illustrations when a status component or direct explanation is sufficient.
-- Do not create custom checkboxes, switches, top bars, toasts, dialogs, or result pages when the library has them.
-- Do not use marketing popup variants for functional confirmation.
-
-## Product overlay
-
-For 理赔向导 / 快捷报销 flows in this repository, also load and follow:
-
-- [claims-guide-flow](../claims-guide-flow/SKILL.md) — dual scenarios, page templates, materials diagnosis, registration dual-fallback, demo-first edit rules
-
-Visual tokens and components stay in this skill; journey structure lives in `claims-guide-flow`.
+- AI 紫渐变、玻璃拟态、装饰光晕  
+- 每个段落一张悬浮卡  
+- 双主按钮同权  
+- 只画 Happy Path，忽略历史稿里的状态矩阵  
+- 脱离组件库手绘 TopBar / Button / Checkbox  
+- 把本 skill 当成单一业务流程图，拒绝用于其他需求  
 
 ## Reference files
 
-- [tokens.md](references/tokens.md) — complete semantic token values and typography scale
-- [components.md](references/components.md) — component keys, dimensions, and when to use them
-- [layout-and-content.md](references/layout-and-content.md) — page anatomy, content hierarchy, states, and QA checklist
+- [tokens.md](references/tokens.md)  
+- [components.md](references/components.md)  
+- [layout-and-content.md](references/layout-and-content.md)  
+- [design-principles.md](references/design-principles.md)  
+- [pattern-archive.md](references/pattern-archive.md)  
+- [portal-and-cards.md](references/portal-and-cards.md)  
+- [status-and-result-cards.md](references/status-and-result-cards.md)  
+- [application-flow-modules.md](references/application-flow-modules.md)  
