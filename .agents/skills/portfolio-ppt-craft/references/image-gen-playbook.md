@@ -53,6 +53,29 @@ NO purple gradient, NO film grain, NO radar lines, NO icons, NO fake UI, NO text
 Solid clean background suitable as a replaceable slide layer.
 ```
 
+### 封面满幅场景示例（用户稿反推 · 优先）
+
+> 来源：用户封面 `384:1795` / `423:1815`（cases/`learn-user-cover-gen-2026-07-28.md`，T-036）  
+> 封面主锚用 **叙事场景**，不要用目录式单物棚拍。
+
+```text
+[类型] Full-bleed 16:9 portfolio COVER hero scene (single image)
+[构图] Left third darker/clearer for Figma typography overlay; right denser
+[主锚 A · 夜工位] Warm desk lamp key light × cool ambient; frosted acrylic
+tool bricks with embedded 3D software marks (Figma/Sketch as thick glass
+objects, NOT flat stickers); pegboard with process papers (journey/wireframe);
+wood desk, keyboard, shallow DOF
+[主锚 B · 软3D控制台] Thick soft-3D UI console board with relief buttons,
+toggles, UX block; colorful physical software tiles; open wireframe sketchbook
++ sticky notes overlapping the board; deep indigo atmosphere; soft side light
+[材质] ≥4 nameable materials mixed in one frame
+[光] Clear direction; short soft contact shadows; restrained edge glow only
+[禁止] Single abstract sphere/ribbon as cover hero; empty white clay stage;
+flat logo stickers; burned-in titles; unreadable fake phone UI; neon rainbow;
+film grain; whole fake PPT
+[输出] 1920×1080-ready full bleed; NO text in image
+```
+
 ### 丑图一票否决
 
 - [ ] 是否像运营大促海报或招商科技皮？是 → 重做  
