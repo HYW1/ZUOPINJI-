@@ -61,9 +61,9 @@ Solid clean background suitable as a replaceable slide layer.
 ```text
 [类型] Full-bleed 16:9 portfolio COVER hero scene (single image)
 [构图] Left third darker/clearer for Figma typography overlay; right denser
-[主锚 A · 夜工位] Warm desk lamp key light × cool ambient; frosted acrylic
-tool bricks with embedded 3D software marks (Figma/Sketch as thick glass
-objects, NOT flat stickers); pegboard with process papers (journey/wireframe);
+[主锚 A · 夜工位] Warm desk lamp key light × cool ambient; rounded-square SQUIRCLE soft tiles (large corner radius like iOS icons;
+short thick slabs — NOT tall rectangular acrylic trophy bricks) with soft
+3D software marks (Figma/Sketch), NOT flat stickers; pegboard with process papers (journey/wireframe);
 wood desk, keyboard, shallow DOF
 [主锚 B · 软3D控制台] Thick soft-3D UI console board with relief buttons,
 toggles, UX block; colorful physical software tiles; open wireframe sketchbook
@@ -72,7 +72,7 @@ toggles, UX block; colorful physical software tiles; open wireframe sketchbook
 [光] Clear direction; short soft contact shadows; restrained edge glow only
 [禁止] Single abstract sphere/ribbon as cover hero; empty white clay stage;
 flat logo stickers; burned-in titles; unreadable fake phone UI; neon rainbow;
-film grain; whole fake PPT; uneven acrylic brick heights; Win/gaming mechanical keyboard / orange Esc / RGB
+film grain; whole fake PPT; uneven sizes; tall rectangular acrylic trophy/tombstone bricks; sharp-corner glass pillars; Win/gaming mechanical keyboard / orange Esc / RGB
 [输出] 1920×1080-ready full bleed; NO text in image
 ```
 
@@ -88,6 +88,8 @@ film grain; whole fake PPT; uneven acrylic brick heights; Win/gaming mechanical 
 - [ ] 工具砖是否等高同宽同厚？否 → 重做（T-037）
 - [ ] 是否出现 Win 厚机械键盘 / 橙 Esc / 游戏 RGB？是 → 重做；改 MacBook 或 Magic Keyboard
 - [ ] 是否像低端 PC 桌面棚拍？是 → 重做
+- [ ] 软件识别物是否为正方形大圆角软标？若是高立矩形「砖」→ 重做（T-038）
+
   
 
 ## 提示词必填项

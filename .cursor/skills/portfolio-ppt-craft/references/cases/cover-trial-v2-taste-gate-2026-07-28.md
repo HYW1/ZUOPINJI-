@@ -43,3 +43,7 @@ Figma：https://www.figma.com/design/ZXibIc4lflyHRoTF7OQV0L/skill?node-id=435-17
 - 洞洞板过程稿若仍显旧，可再减密度或换更干净纸面  
 
 用户若还嫌砖/标质感不够，下一轮专攻 **光学玻璃砖材质**，硬件锚保持 Mac。
+
+---
+
+**后续**：用户批立砖造型 → `cover-trial-v3-squircle-2026-07-28.md`（同帧换大圆角正方形软标）。
