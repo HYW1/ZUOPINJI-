@@ -72,7 +72,7 @@ toggles, UX block; colorful physical software tiles; open wireframe sketchbook
 [光] Clear direction; short soft contact shadows; restrained edge glow only
 [禁止] Single abstract sphere/ribbon as cover hero; empty white clay stage;
 flat logo stickers; burned-in titles; unreadable fake phone UI; neon rainbow;
-film grain; whole fake PPT
+film grain; whole fake PPT; uneven acrylic brick heights; Win/gaming mechanical keyboard / orange Esc / RGB
 [输出] 1920×1080-ready full bleed; NO text in image
 ```
 
@@ -84,7 +84,11 @@ film grain; whole fake PPT
 - [ ] 是否塑料人 / 漂浮礼盒 / 通用 AI 插画墙？是 → 重做  
 - [ ] 是否假手机框或模糊假 UI？是 → 删除，改用真实作品图  
 - [ ] 是否烧字进图？是 → 重做  
-- [ ] 与全册中性气质并排是否明显廉价？是 → 重做  
+- [ ] 与全册中性气质并排是否明显廉价？是 → 重做
+- [ ] 工具砖是否等高同宽同厚？否 → 重做（T-037）
+- [ ] 是否出现 Win 厚机械键盘 / 橙 Esc / 游戏 RGB？是 → 重做；改 MacBook 或 Magic Keyboard
+- [ ] 是否像低端 PC 桌面棚拍？是 → 重做
+  
 
 ## 提示词必填项
 
